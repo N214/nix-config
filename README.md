@@ -9,6 +9,8 @@ darwin-rebuild switch --flake ~/nix-config#mbp
 
 ## NixOs
 ```sh
-sudo nixos-install --flake ~/nix-config#ubuntu
-sudo nixos-install --flake github:evantravers/dotfiles#ubuntu
+nix run home-manager -- switch --flake ~/nix-config#n214
+home-manager switch --flake ~/nix-config#n214
+
+sudo nix run home-manager --flake github:evantravers/dotfiles#ubuntu
 ```

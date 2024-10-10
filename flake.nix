@@ -40,10 +40,9 @@
       };
   in
   {
-    ubuntuConfigurations = {
+    homeConfigurations = {
       "n214" = home-manager.lib.homeManagerConfiguration {
-        #inherit pkgs;
-        system = "x86_64-linux";
+        pkgs = import nixpkgs { system = "aarch64-linux"; };
         modules = [
           ./home-manager
         ];

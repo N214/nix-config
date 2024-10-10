@@ -8,6 +8,7 @@
   # $ nix-env -qaP | grep wget
   environment.systemPackages = [
       pkgs.home-manager
+      pkgs.mkalias
   ];
 
   homebrew = {
