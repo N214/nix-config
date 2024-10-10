@@ -41,10 +41,16 @@
   in
   {
     homeConfigurations = {
-      "n214" = home-manager.lib.homeManagerConfiguration {
-        pkgs = import nixpkgs { system = "aarch64-linux"; };
+      "ubuntu" = home-manager.lib.homeManagerConfiguration {
+        pkgs = import nixpkgs { 
+          system = "aarch64-linux"; 
+          };
         modules = [
           ./home-manager
+          {
+          home.username = "ubuntu";
+          home.homeDirectory = "/home/ubuntu";
+          }
         ];
       };
     };
