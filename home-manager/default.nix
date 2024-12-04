@@ -29,6 +29,7 @@
       pkgs.fzf
       pkgs.fontconfig
       pkgs.go
+      pkgs.goreleaser
       pkgs.gotop
       pkgs.kubernetes-helm
       pkgs.kubectl
@@ -53,6 +54,7 @@
       pkgs.ranger
       pkgs.rclone
       pkgs.ripgrep
+      pkgs.shellcheck
       pkgs.terraform
       pkgs.terraform-docs
       pkgs.tree

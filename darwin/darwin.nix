@@ -9,6 +9,9 @@
   environment.systemPackages = [
       pkgs.home-manager
       pkgs.mkalias
+      pkgs.alt-tab-macos
+      pkgs.monitorcontrol
+      pkgs.duckdb
   ];
 
   homebrew = {
