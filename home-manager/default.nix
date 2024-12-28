@@ -48,6 +48,7 @@
       pkgs.neovide
       pkgs.neovim
       pkgs.nnn
+      pkgs.nodejs-slim_22
       pkgs.obsidian
       pkgs.pnpm
       pkgs.pre-commit
@@ -58,6 +59,7 @@
       pkgs.terraform
       pkgs.terraform-docs
       pkgs.tree
+      pkgs.uv
       pkgs.virtualenv
       pkgs.vivid
       pkgs.viu
