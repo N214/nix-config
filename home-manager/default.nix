@@ -23,6 +23,7 @@
       pkgs.direnv
       pkgs.coreutils
       pkgs.croc
+      pkgs.ctlptl
       pkgs.curlFull
       pkgs.fd
       pkgs.fira-code-nerdfont
@@ -31,6 +32,7 @@
       pkgs.go
       pkgs.goreleaser
       pkgs.gotop
+      pkgs.gum
       pkgs.kubernetes-helm
       pkgs.kubectl
       pkgs.kubectx
@@ -58,6 +60,7 @@
       pkgs.shellcheck
       pkgs.terraform
       pkgs.terraform-docs
+      pkgs.tilt
       pkgs.tree
       pkgs.uv
       pkgs.virtualenv
