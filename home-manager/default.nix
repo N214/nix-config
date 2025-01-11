@@ -46,6 +46,7 @@
       pkgs.kind
       #pkgs.kitty
       #pkgs.k9s
+      pkgs.lazygit
       pkgs.lua
       #pkgs.mysql-client
       pkgs.nerdfetch
@@ -122,7 +123,7 @@
   #
   # if you don't want to manage your shell through Home Manager.
   home.sessionVariables = {
-     EDITOR = "emacs";
+     EDITOR = "nvim";
   };
 
   # Let Home Manager install and manage itself.
