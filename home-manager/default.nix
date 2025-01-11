@@ -19,18 +19,22 @@
   home.packages = [
       #pkgs.alacritty
       pkgs.bat
-      pkgs.bruno
+      #pkgs.bruno
       pkgs.direnv
       pkgs.coreutils
       pkgs.croc
       pkgs.ctlptl
       pkgs.curlFull
+      #pkgs.coreutils
+      #pkgs.croc
+      #pkgs.curlFull
       pkgs.fd
-      pkgs.fira-code-nerdfont
-      pkgs.fzf
+      #pkgs.fira-code-nerdfont
+      #pkgs.fzf
       pkgs.fontconfig
       pkgs.go
       pkgs.goreleaser
+      #pkgs.go
       pkgs.gotop
       pkgs.gum
       pkgs.kubernetes-helm
@@ -40,19 +44,20 @@
       pkgs.inconsolata-nerdfont
       pkgs.jq
       pkgs.kind
-      pkgs.kitty
-      pkgs.k9s
+      #pkgs.kitty
+      #pkgs.k9s
       pkgs.lua
-      pkgs.mkalias
-      pkgs.mysql-client
+      #pkgs.mysql-client
       pkgs.nerdfetch
       pkgs.ngrep
-      pkgs.neovide
-      pkgs.neovim
+      #pkgs.neovide
+      #pkgs.neovim
       pkgs.nnn
       pkgs.nodejs-slim_22
       pkgs.obsidian
       pkgs.pnpm
+      #pkgs.obsidian
+      #pkgs.pnpm
       pkgs.pre-commit
       pkgs.ranger
       pkgs.rclone
@@ -66,14 +71,14 @@
       pkgs.virtualenv
       pkgs.vivid
       pkgs.viu
-      pkgs.vlc-bin-universal
+      #pkgs.vlc-bin-universal
       #pkgs.vscode-with-extensions
       pkgs.yq-go
-      #pkgs.zsh
-      #pkgs.zsh-z
-      #pkgs.zsh-history
-      #pkgs.zsh-fzf-history-search
-      #pkgs.zsh-autosuggestions
+      pkgs.zsh
+      pkgs.zsh-z
+      pkgs.zsh-history
+      pkgs.zsh-fzf-history-search
+      pkgs.zsh-autosuggestions
       pkgs.zsh-syntax-highlighting
 
     # # It is sometimes useful to fine-tune packages, for example, by applying
