@@ -17,24 +17,18 @@
   # The home.packages option allows you to install Nix packages into your
   # environment.
   home.packages = [
-      #pkgs.alacritty
       pkgs.bat
-      #pkgs.bruno
       pkgs.direnv
       pkgs.coreutils
       pkgs.croc
       pkgs.ctlptl
       pkgs.curlFull
-      #pkgs.coreutils
-      #pkgs.croc
-      #pkgs.curlFull
       pkgs.fd
-      #pkgs.fira-code-nerdfont
-      #pkgs.fzf
+      pkgs.fira-code-nerdfont
+      pkgs.fzf
       pkgs.fontconfig
       pkgs.go
       pkgs.goreleaser
-      #pkgs.go
       pkgs.gotop
       pkgs.gum
       pkgs.kubernetes-helm
@@ -44,21 +38,18 @@
       pkgs.inconsolata-nerdfont
       pkgs.jq
       pkgs.kind
-      #pkgs.kitty
-      #pkgs.k9s
+      pkgs.kitty
+      pkgs.k9s
       pkgs.lazygit
       pkgs.lua
       #pkgs.mysql-client
       pkgs.nerdfetch
       pkgs.ngrep
       #pkgs.neovide
-      #pkgs.neovim
+      pkgs.neovim
       pkgs.nnn
       pkgs.nodejs-slim_22
-      pkgs.obsidian
       pkgs.pnpm
-      #pkgs.obsidian
-      #pkgs.pnpm
       pkgs.pre-commit
       pkgs.ranger
       pkgs.rclone
@@ -72,8 +63,6 @@
       pkgs.virtualenv
       pkgs.vivid
       pkgs.viu
-      #pkgs.vlc-bin-universal
-      #pkgs.vscode-with-extensions
       pkgs.yq-go
       pkgs.zsh
       pkgs.zsh-z
@@ -86,7 +75,7 @@
     # # overrides. You can do that directly here, just don't forget the
     # # parentheses. Maybe you want to install Nerd Fonts with a limited number of
     # # fonts?
-    # (pkgs.nerdfonts.override { fonts = [ "FantasqueSansMono" ]; })
+    (pkgs.nerdfonts.override { fonts = [ "FantasqueSansMono" ]; })
 
     # # You can also create simple shell scripts directly inside your
     # # configuration. For example, this adds a command 'my-hello' to your

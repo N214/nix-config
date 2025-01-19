@@ -12,6 +12,10 @@
       pkgs.alt-tab-macos
       pkgs.monitorcontrol
       pkgs.duckdb
+      pkgs.alacritty
+      pkgs.bruno
+      pkgs.obsidian
+      pkgs.vscode-with-extensions
   ];
 
   homebrew = {
