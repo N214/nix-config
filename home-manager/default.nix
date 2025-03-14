@@ -25,7 +25,7 @@
       pkgs.ctlptl
       pkgs.curlFull
       pkgs.fd
-      pkgs.fira-code-nerdfont
+      pkgs.nerd-fonts.fira-code
       pkgs.fzf
       pkgs.fontconfig
       pkgs.go
@@ -36,7 +36,7 @@
       pkgs.kubectl
       pkgs.kubectx
       pkgs.htop
-      pkgs.inconsolata-nerdfont
+      pkgs.nerd-fonts.inconsolata
       pkgs.jq
       pkgs.kind
       pkgs.kitty
@@ -76,7 +76,8 @@
     # # overrides. You can do that directly here, just don't forget the
     # # parentheses. Maybe you want to install Nerd Fonts with a limited number of
     # # fonts?
-    (pkgs.nerdfonts.override { fonts = [ "FantasqueSansMono" ]; })
+    #(pkgs.nerdfonts.override { fonts = [ "FantasqueSansMono" ]; })
+
 
     # # You can also create simple shell scripts directly inside your
     # # configuration. For example, this adds a command 'my-hello' to your
