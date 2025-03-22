@@ -4,7 +4,6 @@
   # Home Manager needs a bit of information about you and the paths it should
   # manage.
 
-  nixpkgs.config.allowUnfree = true;
   # This value determines the Home Manager release that your configuration is
   # compatible with. This helps avoid breakage when a new Home Manager release
   # introduces backwards incompatible changes.
@@ -49,7 +48,7 @@
       #pkgs.neovide
       pkgs.neovim
       pkgs.nnn
-      pkgs.nodejs-slim_22
+      #pkgs.nodejs-slim_22
       pkgs.pnpm
       pkgs.pre-commit
       pkgs.ranger
