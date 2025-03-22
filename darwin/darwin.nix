@@ -14,39 +14,44 @@
       pkgs.duckdb
       pkgs.alacritty
       pkgs.bruno
+      pkgs.kconf
       pkgs.obsidian
+      pkgs.podman
       pkgs.vscode-with-extensions
+      pkgs.nerd-fonts.droid-sans-mono
   ];
 
-  homebrew = {
-    enable = true;
-    brews = [
-      "mas"
-      "g-ls"
-    ];
-    casks = [
-      "hammerspoon"
-      "firefox"
-      "iina"
-      "maccy"
-      "the-unarchiver"
-    ];
-    masApps = {
-      #"Yoink" = 457622435;
-    };
-    onActivation.autoUpdate = true;
-    onActivation.upgrade = true;
-  };
+  #homebrew = {
+  #  enable = true;
+  #  brews = [
+  #    "brew-bundle"
+  #    "mas"
+  #    "g-ls"
+  #  ];
+  #  taps = [ "homebrew/bundle"];
+  #  casks = [
+  #    "hammerspoon"
+  #    "firefox"
+  #    "iina"
+  #    "maccy"
+  #    "the-unarchiver"
+  #  ];
+  #  masApps = {
+  #    #"Yoink" = 457622435;
+  #  };
+  #  onActivation.autoUpdate = true;
+  #  onActivation.upgrade = true;
+  #};
   users.users.n214 = {
     home = "/Users/n214";
   };
+  ids.gids.nixbld = 30000;
 
-  fonts.packages = [
-    (pkgs.nerdfonts.override { fonts = ["JetBrainsMono"]; })
-  ];
+  #  fonts.packages = [
+  #  (pkgs.nerdfonts.override { fonts = ["JetBrainsMono"]; })
+  #];
 
   # Auto upgrade nix package and the daemon service.
-  services.nix-daemon.enable = true;
   nix.package = pkgs.nix;
   nix.settings = {
       "extra-experimental-features" = [ "nix-command" "flakes" ];
