@@ -9,15 +9,43 @@
   environment.systemPackages = [
       pkgs.home-manager
       pkgs.mkalias
-      pkgs.monitorcontrol
       pkgs.emacs
       pkgs.coreutils-prefixed
-      pkgs.bruno
-      pkgs.ghostty-bin
-      pkgs.obsidian
       pkgs.podman
       pkgs.nerd-fonts.droid-sans-mono
   ];
+
+  homebrew = {
+    enable = true;
+    onActivation.autoUpdate = true;
+    onActivation.upgrade = true;
+    # "zap" will remove any packages not listed here
+    onActivation.cleanup = "zap";
+
+    taps = [ 
+      "homebrew/bundle"
+      "homebrew/services"
+    ];
+
+    brews = [
+      # CLI tools that work better via brew (if any)
+    ];
+
+    casks = [
+      "alt-tab"
+      "obsidian"
+      "bruno"
+      "ghostty"
+      "monitorcontrol"
+      # Add more apps here as needed
+    ];
+
+    masApps = {
+      # "App Name" = AppStoreID;
+    };
+  };
+
+  system.primaryUser = "n214";
 
   users.users.n214 = {
     home = "/Users/n214";
