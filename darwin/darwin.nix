@@ -19,16 +19,14 @@
     enable = true;
     onActivation.autoUpdate = true;
     onActivation.upgrade = true;
-    # "zap" will remove any packages not listed here
     onActivation.cleanup = "zap";
 
     taps = [ 
       "homebrew/bundle"
-      "homebrew/services"
     ];
 
     brews = [
-      # CLI tools that work better via brew (if any)
+      # Add brews here if they aren't in Nix or work better via Homebrew
     ];
 
     casks = [
@@ -37,12 +35,15 @@
       "bruno"
       "ghostty"
       "monitorcontrol"
-      # Add more apps here as needed
+      "raycast"
+      "alacritty"
+      "firefox"
+      "hammerspoon"
+      "iina"
+      "maccy"
+      "the-unarchiver"
+      "warp"
     ];
-
-    masApps = {
-      # "App Name" = AppStoreID;
-    };
   };
 
   system.primaryUser = "n214";

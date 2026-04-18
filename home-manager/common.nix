@@ -51,6 +51,14 @@
     pkgs.zsh-autosuggestions
     pkgs.zsh-syntax-highlighting
     
+    # Restored CLI Tools
+    pkgs.nodejs_22
+    pkgs.tmux
+    pkgs.ffmpeg
+    pkgs.bitwarden-cli
+    pkgs.blueutil
+    pkgs.htop
+
     # Tools moved from darwin.nix for cross-platform availability
     pkgs.duckdb
     pkgs.just
